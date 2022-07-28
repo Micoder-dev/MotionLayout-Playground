@@ -3,9 +3,9 @@ name: Build and Test
 on:
 
   push:
-    branches: [ "main" ]
+    branches: [ "master" ]
   pull_request:
-    branches: [ "main" ]  
+    branches: [ "master" ]  
     
   workflow_dispatch:
 
@@ -106,5 +106,5 @@ jobs:
       - name: Upload APK
         uses: actions/upload-artifact@v2
         with:
-          name: ContentProvider-ContactsAPK
+          name: MotionLayout-Playground-APK
           path: app/build/outputs/apk/debug/**.apk
